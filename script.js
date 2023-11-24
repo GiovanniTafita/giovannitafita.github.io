@@ -49,11 +49,14 @@ const animateCSS = (element, animation, option = '', prefix = 'animate__') =>
 
 animateCSS('#greeting', 'bounceInDown').then(() => {
   var typed = new Typed('#hello', {
-    strings: ['Hello !!! Today is a special day'],
+    strings: ['Today is a special day'],
     typeSpeed: 100,
   });
   // clickMe.classList.remove('hide');
-  animateCSS('#click_me', 'rubberBand', 'infinite');
+  animateCSS('#click_me', 'rubberBand', 'repeat-3').then(() => {
+    clickMe.innerHTML = 'Click me';
+    animateCSS('#click_me', 'shakeX');
+  });
 });
 
 clickMe.addEventListener('click', () => {
