@@ -50,10 +50,10 @@ const animateCSS = (element, animation, option = '', prefix = 'animate__') =>
 animateCSS('#greeting', 'bounceInDown').then(() => {
   var typed = new Typed('#hello', {
     strings: ['Hello !!! Today is a special day'],
-    typeSpeed: 50,
+    typeSpeed: 100,
   });
   // clickMe.classList.remove('hide');
-  animateCSS('#click_me', 'rubberBand', 'repeat-3');
+  animateCSS('#click_me', 'rubberBand', 'infinite');
 });
 
 clickMe.addEventListener('click', () => {
@@ -97,16 +97,3 @@ clickMe.addEventListener('click', () => {
   });
   // greeting.classList.add('hide');
 })
-
-
-
-// let countdownInterval = setInterval(function () {
-//   countdown--;
-
-//   if (countdown <= 0) {
-//     clearInterval(countdownInterval); // Arrêter le compte à rebours
-//     countdownDisplay.style.display = 'none'; // Cacher le compteur
-//   } else {
-//     countdownDisplay.innerHTML = countdown;
-//   }
-// }, 1000);
