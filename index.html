@@ -5,11 +5,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
   <title>Page</title>
 </head>
 
 <body>
-  <h1 class="test">Hello word!!!</h1>
+  <div id="main" class="text-center">
+    <div id="greeting">
+      <h1><span id="hello"></span></h1>
+      <br>
+      <button id="click_me">Click me</button>
+    </div>
+
+    <div id="message" class="hide">
+      <div class="flex gap">
+        <h1 id="happy" class="hide">Happy</h2>
+          <h1 id="birth" class="hide">birth</h1>
+      </div>
+      <h1 id="day" class="hide">DAY</h1>
+      <div class="flex gap">
+        <h1 id="name1" class="hide"> Quèren </h1>
+        <h1 id="name2" class="hide"> Lamothe </h1>
+      </div>
+
+      <h1 id="heart" class="red hide">&#10084;</h1>
+    </div>
+  </div>
+  <!-- <span id="element"></span> -->
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.1/dist/confetti.browser.min.js"></script>
+  <script src="/script.js"></script>
+  <script>
+
+    // const jsConfetti = new JSConfetti()
+
+    // jsConfetti.addConfetti()
+
+    // var duration = 15 * 1000;
+    // var animationEnd = Date.now() + duration;
+    // var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+    // function randomInRange(min, max) {
+    //   return Math.random() * (max - min) + min;
+    // }
+
+    // var interval = setInterval(function () {
+    //   var timeLeft = animationEnd - Date.now();
+
+    //   if (timeLeft <= 0) {
+    //     return clearInterval(interval);
+    //   }
+
+    //   var particleCount = 50 * (timeLeft / duration);
+    //   // since particles fall down, start a bit higher than random
+    //   confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } });
+    //   confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
+    // }, 250);
+
+  </script>
 </body>
 
 </html>
